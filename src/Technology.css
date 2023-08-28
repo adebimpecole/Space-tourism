@@ -1,0 +1,29 @@
+.Technology{
+    background-image: url("./images/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+.thbdy{
+    padding-left: 10%;
+    height: 100%;
+    padding-top: 10%;
+}
+
+@media only screen and (max-width: 943px){
+    .thbdy{
+        padding-left: 10%;
+        height: 100%;
+        padding-top: 15%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .thbdy{
+        padding-left: 0%;
+        height: 100%;
+        padding-top: 15%;
+    }
+}

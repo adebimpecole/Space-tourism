@@ -1,0 +1,204 @@
+.CrewDets{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: top;
+    height: 100%;
+    overflow-y: hidden;
+}
+.title, .cname{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+}
+.title{
+    color: rgba(255, 255, 255, 0.586);
+    font-size: 1.8rem;
+    padding-bottom: 3%;
+}
+.cname{
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 5%;
+}
+.mmbrtxt{
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: .9rem;
+    padding-bottom: 18%;
+    width: 80%;
+}
+.abtmmbr{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-top: 8%;
+}
+.crewmem{
+    width: 34%;
+    height: 100%;
+}
+@media only screen and (max-width: 1197px){
+    .crewmem{
+        width: 37%;
+        height: 100%;
+    }
+ }
+ @media only screen and (max-width: 1073px){
+    .crewmem{
+        width: 40%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 943px){
+    .crewmem{
+        width: 46%;
+        height: 100%;
+        padding-top: 3%;
+    }
+    .abtmmbr{
+        padding-top: 13%;
+    }
+}
+@media only screen and (max-width: 843px){
+    .crewmem{
+        width: 46%;
+        height: 100%;
+        padding-top: 0;
+    }
+    .title{
+        font-size: 1.4rem;
+    }
+    .cname{
+        color: white;
+        font-size: 2.8rem;
+        padding-bottom: 5%;
+    }
+    .abtmmbr{
+        padding-top: 10%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .CrewDets{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        padding-top: 6%;
+        
+    }
+    .abtmmbr{
+        width: 80%;
+        padding-top: 5%;
+        align-items: center;
+    }
+    .mmbrtxt{
+        font-family: 'Barlow', sans-serif;
+        color: #D0D6F9;
+        font-size: .9rem;
+        padding-bottom: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    .crewmem{
+        width: 40%;
+        height: 70%;
+        padding-top: 5%;
+    }
+    .title{
+        font-size: 1.6rem;
+    }
+    .cname{
+        font-size: 2.8rem;
+        padding-bottom: 5%;
+    }
+}
+@media only screen and (max-width: 668px){
+    .crewmem{
+        width: 46%;
+        height: 50%;
+        padding-top: 8%;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .cname{
+        font-size: 2.6rem;
+        padding-bottom: 5%;
+    }
+    .abtmmbr{
+        width: 100%;
+        padding-top: 5%;
+    }
+}
+@media only screen and (max-width: 568px){
+    .crewmem{
+        width: 48%;
+        height: 55%;
+        padding-top: 8%;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+    .cname{
+        font-size: 2.2rem;
+        padding-bottom: 5%;
+    }
+}
+@media only screen and (max-width: 468px){
+    .crewmem{
+        width: 48%;
+        height: 55%;
+        padding-top: 8%;
+    }
+    .title{
+        font-size: 1.2rem;
+    }
+    .cname{
+        font-size: 2rem;
+        padding-bottom: 5%;
+    }
+}
+/*  */
+/* 
+
+@media only screen and (max-width: 276px){
+    .HomeNav{
+        height: 12%;
+        padding: 0 7%;
+} 
+.ham{
+        display: block;
+        width: 6%;
+}
+.route,.nmbr{
+        font-size: .9rem;
+}
+    .logo{
+        width: 12%;
+        height: 40%;
+    }
+    .nav{
+        display: none;
+        height: 835%;
+        width: 70%;
+        padding-left: 6%;
+        padding-top: 10%;
+    }
+    .close{
+        width: 10%;
+    }
+    .sbnv{
+        gap: 9%;
+        height: 9%;
+        padding: 5% 3%;
+    }
+    .sbnv:hover{
+        border-bottom: none;
+        border-right: 3px solid rgba(255, 255, 255, 0.556);
+    }
+    .cls{
+        width: 100%;
+        padding: 0 12% 17% 0;
+    }
+} */

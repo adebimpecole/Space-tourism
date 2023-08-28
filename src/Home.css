@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+
+.Home{
+    background-image: url("./images/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.hbdy{
+    display: flex;
+    flex-direction: row;
+    padding: 10% 10% 0 10%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+.rhome{
+    width: 50%;
+    text-align: right;
+    cursor: pointer;
+}
+.sbspan{
+    color: black;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-family: 'Bellefair', serif;
+    padding: 20% 12%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border-radius: 50%;
+    transition: box-shadow .3s;
+}
+.sbspan:hover {
+    box-shadow: 0 0 0 4.5rem rgba(255, 255, 255, 0.145);
+}
+
+.lhome{
+    width: 40%;
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lhm2{
+    font-family: 'Bellefair', serif;
+    color: white;
+    font-size: 7rem;
+    text-transform: uppercase;
+    margin: 5% 0;
+}
+.lhm1{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+.lhm3{
+    font-size: .9rem;
+    width: 70%;
+}
+@media only screen and (max-width: 1197px){
+    .sbspan{
+        padding: 21% 12%;
+        font-size: 1.9rem;
+    }
+    .lhm1{
+        font-size: 1.3rem;
+    }
+    .lhm2{
+        font-size: 6.5rem;
+    }
+    .lhm3{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1073px){
+    .sbspan{
+        padding: 23% 12%;
+    }
+    .lhm1{
+        font-size: 1.3rem;
+    }
+    .lhome{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 943px){
+    .lhome{
+        width: 55%;
+    }
+    .sbspan{
+        font-size: 1.7rem;
+    }
+    .rhome{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .Home{
+        background-image: url("./images/background-home-tablet.jpg");
+        height: 140%;
+    }
+    .hbdy{
+        flex-direction: column;
+        height: 100%;
+        padding: 25% 10% 0 10%;
+        justify-content: flex-start;
+        gap: 27%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 2rem;
+    }
+    .lhome{
+        width: 80%;
+        align-items: center;
+    }
+    .lhm1{
+        font-size: 1.5rem;
+    }
+    .lhm2{
+        font-size: 8.5rem;
+        text-align: center;
+    }
+    .lhm3{
+        width: 80%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .rhome{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 668px){
+    .Home{
+        height: 130%;
+    } 
+    .hbdy{
+        padding: 32% 5% 0 5%;
+        gap: 25%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 1.8rem;
+    }
+    .lhome{
+        width: 85%;
+        align-items: center;
+    }
+    .lhm1{
+        font-size: 1.3rem;
+    }
+    .lhm2{
+        font-size: 8rem;
+    }
+    .lhm3{
+        font-size: 1rem;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
+    }
+}
+
+@media only screen and (max-width: 568px){
+    .Home{
+        height: 120%;
+    } 
+    .hbdy{
+        padding: 28% 10% 0 10%;
+        gap: 25%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 1.7rem;
+    }
+    .lhm1{
+        font-size: 1.2rem;
+    }
+    .lhm2{
+        font-size: 7rem;
+    }
+    .lhm3{
+        width: 95%;
+        font-size: 1rem;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
+    }
+}
+
+@media only screen and (max-width: 668px){
+    .Home{
+        height: 130%;
+    } 
+    .hbdy{
+        padding: 32% 5% 0 5%;
+        gap: 25%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 1.8rem;
+    }
+    .lhome{
+        width: 85%;
+        align-items: center;
+    }
+    .lhm1{
+        font-size: 1.3rem;
+    }
+    .lhm2{
+        font-size: 8rem;
+    }
+    .lhm3{
+        font-size: 1rem;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
+    }
+}
+
+@media only screen and (max-width: 468px){
+    .Home{
+        height: 110%;
+    } 
+    .hbdy{
+        padding: 35% 10% 0 10%;
+        gap: 25%;
+        width: 100%;
+    }
+    .sbspan{
+        padding: 38% 18%;
+        font-size: 1.5rem;
+    }
+    .lhome{
+        width: 90%;
+    }
+    .lhm1{
+        font-size: 1.1rem;
+    }
+    .lhm2{
+        font-size: 6rem;
+    }
+    .lhm3{
+        width: 95%;
+        font-size: .9rem;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .Home{
+        background-image: url("./images/background-home-mobile.jpg");
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .hbdy{
+        height: 100%;
+        padding: 40% 5% 0 5%;
+        gap: 25%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 2rem;
+    }
+    .lhome{
+        width: 80%;
+        align-items: center;
+    }
+    .lhm1{
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+    }
+    .lhm2{
+        font-size: 5.5rem;
+        text-align: center;
+    }
+    .lhm3{
+        width: 100%;
+        font-size: .9rem;
+        line-height: 20px;
+    }
+    .sbspan{
+        padding: 42% 19%;
+        font-size: 1.4rem;
+    }
+    .lhome{
+        width: 95%;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
+    }
+}
+@media only screen and (max-width: 276px){
+    .Home{
+        background-image: url("./images/background-home-mobile.jpg");
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .hbdy{
+        height: 100%;
+        padding: 50% 5% 0 5%;
+        gap: 20%;
+    }
+    .sbspan{
+        padding: 35% 17%;
+        font-size: 2rem;
+    }
+    .lhome{
+        width: 80%;
+        align-items: center;
+    }
+    .lhm1{
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+    .lhm2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .lhm3{
+        width: 100%;
+        font-size: .8rem;
+        line-height: 20px;
+    }
+    .sbspan{
+        padding: 42% 19%;
+        font-size: 1.2rem;
+    }
+    .lhome{
+        width: 95%;
+    }
+    .sbspan:hover {
+        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
+    }
+}

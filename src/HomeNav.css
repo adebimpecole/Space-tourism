@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+
+.HomeNav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 3% 0 3% 3%;
+    height: 23%;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ham{
+    display: none;
+}
+hr{
+    width: 35%;
+    z-index: 0;
+    height: 1px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.395);
+}
+.logo{
+    width: 3%;
+    height: 55%;
+}
+.nav{
+    z-index: 1;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 10%;
+    background-color: #ffffff07;
+    height: 100%;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+.sbnv{
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+    height: 100%;
+    padding: 5% 3%;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+}
+.nmbr, .route{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.route{
+    text-transform: uppercase;
+}
+.nmbr{
+    font-weight: bold;
+}
+.hm{
+    border-bottom: 3px solid white;
+    color: white;
+}
+.hm:hover{
+    border-bottom: 3px solid white;
+    color: white;
+}
+.sbnv:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.556);
+}
+.link{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.close{
+    display: none;
+}
+@media only screen and (max-width: 1197px){
+   .HomeNav{
+        height: 21%;
+   } 
+}
+@media only screen and (max-width: 1073px){
+    .HomeNav{
+         height: 19%;
+    } 
+ }
+ @media only screen and (max-width: 943px){
+    .nav{
+        padding-left: 6%;
+        padding-right: 8%;
+    }
+    .logo{
+        width: 5%;
+        height: 55%;
+    }
+ }
+ @media only screen and (max-width: 768px){
+    .HomeNav{
+        justify-content: space-between;
+    }
+    .navhr{
+        display: none;
+    }
+    .nav{
+        width: 70%;
+    }
+    .logo{
+        width: 6%;
+    }
+    .nmbr{
+        display: none;
+    }
+ }
+ @media only screen and (max-width: 668px){
+    .HomeNav{
+        height: 17%;
+   } 
+    .nav{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .logo{
+        width: 6%;
+    }
+ }
+ @media only screen and (max-width: 568px){
+    .HomeNav{
+        height: 16%;
+        padding: 4% 0 4% 4%;
+   } 
+   .route{
+        font-size: .85rem;
+   }
+    .logo{
+        height: 50%;
+    }
+ }
+ @media only screen and (max-width: 468px){
+    .HomeNav{
+        height: 15%;
+        padding: 4% 0 4% 4%;
+   } 
+   .route{
+        font-size: .75rem;
+   }
+    .logo{
+        width: 7%;
+    }
+    .nav{
+        width: 78%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .hm{
+        border-bottom: 2px solid white;
+    }
+    .sbnv:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.556);
+    }
+ }
+ @media only screen and (max-width: 376px){
+    .HomeNav{
+        height: 15%;
+        padding: 4% 7%;
+   } 
+   .ham{
+        display: block;
+        width: 7%;
+   }
+   .route{
+        font-size: 1rem;
+   }
+    .logo{
+        width: 12%;
+        height: 53%;
+    }
+    .nav{
+        height: 665%;
+        z-index: 1;
+        width: 70%;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        box-sizing: border-box;
+        justify-content: right;
+        padding-left: 6%;
+        padding-right: 0;
+        padding-top: 10%;
+        top: 0;
+        right: -278px;
+        align-items: flex-start;
+        transition: right .3s;
+    }
+    .hm{
+        border-bottom: none;
+        border-right: 3px solid white;
+        width: 100%;
+    }
+    .close{
+        display: block;
+    }
+    .sbnv{
+        gap: 9%;
+        height: 9%;
+        padding: 5% 3%;
+        box-sizing: border-box;
+        cursor: pointer;
+        align-items: center;
+        width: 100%;
+    }
+    .nmbr{
+        display: block;
+    }
+    .sbnv:hover{
+        border-bottom: none;
+    }
+    .cls{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 12% 17% 0;
+        box-sizing: border-box;
+    }
+ }
+ @media only screen and (max-width: 276px){
+    .HomeNav{
+        height: 12%;
+        padding: 0 7%;
+   } 
+   .ham{
+        display: block;
+        width: 6%;
+   }
+   .route,.nmbr{
+        font-size: .9rem;
+   }
+    .logo{
+        width: 12%;
+        height: 40%;
+    }
+    .nav{
+        display: none;
+        height: 835%;
+        width: 70%;
+        padding-left: 6%;
+        padding-top: 10%;
+        /* right: -276px; */
+    }
+    .close{
+        width: 10%;
+    }
+    .sbnv{
+        gap: 9%;
+        height: 9%;
+        padding: 5% 3%;
+    }
+    .sbnv:hover{
+        border-bottom: none;
+        border-right: 3px solid rgba(255, 255, 255, 0.556);
+    }
+    .cls{
+        width: 100%;
+        padding: 0 12% 17% 0;
+    }
+ }
