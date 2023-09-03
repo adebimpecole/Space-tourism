@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Crew.css"
 import CrewDets from './CrewDets'
-import HomeNav from './HomeNav'
+
 
 const Crew = () => {
   return (

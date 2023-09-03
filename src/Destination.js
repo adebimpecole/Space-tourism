@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Destination.css"
-import HomeNav from './HomeNav'
 import Location from './Location'
 
 const Destination = () => {

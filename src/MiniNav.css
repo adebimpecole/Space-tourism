@@ -2,42 +2,59 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 60%;
+    width: 70%;
 }
 .mnav{
     color: #D0D6F9;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 6%;
     word-spacing: 5px;
     letter-spacing: 2px;
     cursor: pointer;
 }
 .mnav:hover{
+    font-weight: 800;
     border-bottom: 3px solid rgba(255, 255, 255, 0.556);
 }
 .gm{
     color: white;
     border-bottom: 3px solid white;
-    color: white;
+
 }
 .gm:hover{
     border-bottom: 3px solid white;
+    font-weight: 800;
     color: white;
 }
-@media only screen and (max-width: 1073px){
-    .MiniNav{
-        width: 70%;
-    }
-}
+
 @media only screen and (max-width: 943px){
     .MiniNav{
         width: 75%;
+    }
+    .mnav{
+        font-size: 1.1rem;
     }
 }
 @media only screen and (max-width: 768px){
     .MiniNav{
         width: 45%;
+    }
+}
+@media only screen and (max-width: 568px){
+    .MiniNav{
+        width: 70%;
+    }
+    .mnav{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 376px){
+    .mnav{
+        font-size: .9rem;
+    }
+    .MiniNav{
+        width: 100%;
     }
 }

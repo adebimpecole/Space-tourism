@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     overflow-y: hidden;
 }
@@ -20,10 +20,30 @@
         padding-top: 15%;
     }
 }
+@media only screen and (max-width: 843px){
+    .thbdy{
+        padding: 8rem 5% 2rem 5%;
+    }
+}
 @media only screen and (max-width: 768px){
     .thbdy{
-        padding-left: 0%;
-        height: 100%;
-        padding-top: 15%;
+        padding: 8rem 0 2rem 0;
+    }
+    .Technology{
+        background-image: url("./images/technology/background-technology-tablet.jpg");
+        height: fit-content;
+    }
+    .tlds1{
+        padding: 0 0 0 5%;
+    }
+}
+@media only screen and (max-width: 376px){
+    .thbdy{
+        padding: 5rem 0 2rem 0;
+    }
+    .Technology{
+        background-image: url("./images/technology/background-technology-mobile.jpg");
+        height: 100vh;
+        overflow: hidden;
     }
 }

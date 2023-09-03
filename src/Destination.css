@@ -10,12 +10,12 @@
 .lds1{
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 5px;
     color: white;
 }
 .number{
-    font-weight: bold;
+    font-weight: 900;
     color: rgba(255, 255, 255, 0.395);
 }
 .dbbdy{
@@ -23,248 +23,64 @@
     height: 100%;
 
 }
+@media only screen and (max-width: 1197px){
+    .dbbdy{
+        padding: 9rem 10% 0 10%;
+        box-sizing: border-box;
+    }
+    
+}
 @media only screen and (max-width: 1073px){
     .dbbdy{
-        padding: 12% 10%;
+        padding: 8rem 10% 0 10%;
     }
 }
 @media only screen and (max-width: 943px){
     .dbbdy{
-        padding: 15% 10%;
+        padding: 9rem 10% 0 10%;
     }
     .lds1{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 @media only screen and (max-width: 843px){
     .dbbdy{
-        padding: 16% 5%;
-    }
-    .lds1{
-        font-size: 1.4rem;
+        padding: 10rem 5% 0 5%;
     }
 }
 @media only screen and (max-width: 768px){
     .dbbdy{
-        padding: 18% 5% 0 5%;
+        padding: 8rem 5% 5rem 5%;
         height: 87%;
-    }
-    .lds1{
-        font-size: 1.5rem;
     }
     .Destination{
         background-image: url("./images/background-destination-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 100%;
+        height: fit-content;
         box-sizing: border-box;
         overflow-y: visible;
     }
 }
-/*
-
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhm2{
-        font-size: 8rem;
-    }
-    .lhm3{
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
 @media only screen and (max-width: 568px){
-    .Home{
-        height: 120%;
-    } 
-    .hbdy{
-        padding: 28% 10% 0 10%;
-        gap: 25%;
+    .dbbdy{
+        padding: 8rem 5% 3rem 5%;
+        height: 87%;
     }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.7rem;
-    }
-    .lhm1{
-        font-size: 1.2rem;
-    }
-    .lhm2{
-        font-size: 7rem;
-    }
-    .lhm3{
-        width: 95%;
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhm2{
-        font-size: 8rem;
-    }
-    .lhm3{
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 468px){
-    .Home{
-        height: 110%;
-    } 
-    .hbdy{
-        padding: 35% 10% 0 10%;
-        gap: 25%;
-        width: 100%;
-    }
-    .sbspan{
-        padding: 38% 18%;
-        font-size: 1.5rem;
-    }
-    .lhome{
-        width: 90%;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-    }
-    .lhm2{
-        font-size: 6rem;
-    }
-    .lhm3{
-        width: 95%;
-        font-size: .9rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 376px){
-    .Home{
-        background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
-    }
-    .hbdy{
-        height: 100%;
-        padding: 40% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
-    }
-    .lhome{
-        width: 80%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-        letter-spacing: 2px;
-    }
-    .lhm2{
-        font-size: 5.5rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 100%;
-        font-size: .9rem;
-        line-height: 20px;
-    }
-    .sbspan{
-        padding: 42% 19%;
+    .lds1{
         font-size: 1.4rem;
     }
-    .lhome{
-        width: 95%;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
-    }
 }
-@media only screen and (max-width: 276px){
-    .Home{
-        background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
+@media only screen and (max-width: 376px){
+    .dbbdy{
+        padding: 5rem 5% 3rem 5%;
+        height: fit-content;
     }
-    .hbdy{
-        height: 100%;
-        padding: 50% 5% 0 5%;
-        gap: 20%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
-    }
-    .lhome{
-        width: 80%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1rem;
-        letter-spacing: 2px;
-    }
-    .lhm2{
-        font-size: 4rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 100%;
-        font-size: .8rem;
-        line-height: 20px;
-    }
-    .sbspan{
-        padding: 42% 19%;
+    .lds1{
         font-size: 1.2rem;
     }
-    .lhome{
-        width: 95%;
+    .Destination{
+        height: fit-content;
     }
-    .sbspan:hover {
-        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
-    }
-} */
+}

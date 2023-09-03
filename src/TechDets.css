@@ -1,20 +1,23 @@
 .TechDets{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 85%;
+    gap: 3rem;
+    height: fit-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 8rem;
 }
 .techtxt{
     display: flex;
     flex-direction: column;
     width: 40%;
+    align-items: flex-start;
 }
 .liltxt{
     color: #D0D6F9;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1.1rem;
     padding-bottom: 6%;
     word-spacing: 5px;
     letter-spacing: 2px;
@@ -23,90 +26,98 @@
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
     padding-bottom: 5%;
 }
 .tchdesc{
     font-family: 'Barlow', sans-serif;
     color: #D0D6F9;
-    font-size: .9rem;
+    font-size: 1rem;
     width: 80%;
+    letter-spacing: .6px;
 }
-.techimg{
-    width: 35%;
+.techimg, .techimg2{
+    width: auto;
+    height: 63%;
+    position: absolute;
+    bottom: 4rem;
+    right: 0;
+}
+.techimg2{
+    display: none;
 }
 
 
 @media only screen and (max-width: 1197px){
-    .crewmem{
-        /* width: 35%; */
+    .techtxt{
+        width: 50%;
+    }
+    .liltxt{
+        padding-bottom: 4%;
+    }
+    .tchprdct{
+        padding-bottom: 3%;
+    }
+    .techimg{
+        height: 60%;
     }
  }
  @media only screen and (max-width: 1073px){
-    .crewmem{
-        width: 40%;
-    }
+    
 }
 @media only screen and (max-width: 943px){
     .TechDets{
-        align-items:flex-start;
-        padding-top: 10%;
+        gap: 2rem;
+    }
+    .liltxt{
+        font-size: 1rem;
+    }
+    .tchprdct{
+        font-size: 3rem;
+    }
+    .tchdesc{
+        font-size: .9rem;
+    }
+    .techimg{
+        height: 50%;
     }
 }
 @media only screen and (max-width: 843px){
-    .crewmem{
-        width: 46%;
-        height: 100%;
-        padding-top: 0;
-    }
-    .title{
-        font-size: 1.4rem;
-    }
-    .cname{
-        color: white;
-        font-size: 2.8rem;
-        padding-bottom: 5%;
-    }
-    .abtmmbr{
-        padding-top: 10%;
-    }
+    
 }
 @media only screen and (max-width: 768px){
         .TechDets{
             display: grid;
             grid-auto-flow: row;
-            height: 85%;
+            height: fit-content;
+            place-items: center;
             overflow-y: scroll;
+            padding: 3rem 0 0 0;
         }
         .techtxt{
-            display: flex;
-            flex-direction: column;
-            width: 40%;
+            width: 100%;
+            align-items: center;
         }
         .liltxt{
-            color: #D0D6F9;
-            font-family: 'Barlow Condensed', sans-serif;
-            text-transform: uppercase;
-            font-size: .8rem;
-            padding-bottom: 6%;
-            word-spacing: 5px;
-            letter-spacing: 2px;
+            padding-bottom: 1%;
         }
         .tchprdct{
-            font-family: 'Bellefair', serif;
-            text-transform: uppercase;
-            color: white;
-            font-size: 3rem;
-            padding-bottom: 5%;
+            padding-bottom: 2%;
         }
         .tchdesc{
-            font-family: 'Barlow', sans-serif;
-            color: #D0D6F9;
-            font-size: .9rem;
             width: 80%;
+            text-align: center;
         }
         .techimg{
+            display: none;
+        }
+        .techimg2{
+            display: block;
+            height: auto;
+            position: relative;
             width: 100%;
+            top: auto;
+            bottom: auto;
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 1;
@@ -126,91 +137,39 @@
         }
 }
 @media only screen and (max-width: 668px){
-    .crewmem{
-        width: 46%;
-        height: 50%;
-        padding-top: 8%;
-    }
-    .title{
-        font-size: 1.5rem;
-    }
-    .cname{
-        font-size: 2.6rem;
-        padding-bottom: 5%;
-    }
-    .abtmmbr{
-        width: 100%;
-        padding-top: 5%;
-    }
+    
 }
 @media only screen and (max-width: 568px){
-    .crewmem{
-        width: 48%;
-        height: 55%;
-        padding-top: 8%;
-    }
-    .title{
-        font-size: 1.3rem;
-    }
-    .cname{
-        font-size: 2.2rem;
-        padding-bottom: 5%;
-    }
-}
-@media only screen and (max-width: 468px){
-    .crewmem{
-        width: 48%;
-        height: 55%;
-        padding-top: 8%;
-    }
-    .title{
-        font-size: 1.2rem;
-    }
-    .cname{
-        font-size: 2rem;
-        padding-bottom: 5%;
-    }
-}
-/*  */
-/* 
-
-@media only screen and (max-width: 276px){
-    .HomeNav{
-        height: 12%;
-        padding: 0 7%;
-} 
-.ham{
-        display: block;
-        width: 6%;
-}
-.route,.nmbr{
-        font-size: .9rem;
-}
-    .logo{
-        width: 12%;
-        height: 40%;
-    }
-    .nav{
-        display: none;
-        height: 835%;
-        width: 70%;
-        padding-left: 6%;
-        padding-top: 10%;
-    }
-    .close{
-        width: 10%;
-    }
-    .sbnv{
-        gap: 9%;
-        height: 9%;
-        padding: 5% 3%;
-    }
-    .sbnv:hover{
-        border-bottom: none;
-        border-right: 3px solid rgba(255, 255, 255, 0.556);
-    }
-    .cls{
+    .tchdesc{
         width: 100%;
-        padding: 0 12% 17% 0;
     }
-} */
+    .techtxt{
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .liltxt{
+        font-size: .9rem;
+    }
+    .tchprdct{
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    .tchdesc{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .liltxt{
+        font-size: .8rem;
+    }
+    .tchprdct{
+        font-size: 2.3rem;
+    }
+    .tchdesc{
+        font-size: .7rem;
+    }
+    .TechDets{
+        padding: 2rem 0 0 0;
+    }
+}

@@ -16,13 +16,13 @@
 hr{
     width: 35%;
     z-index: 0;
-    height: 1px;
+    height: 1.5px;
     border: none;
     background-color: rgba(255, 255, 255, 0.395);
 }
 .logo{
     width: 3%;
-    height: 55%;
+    height: auto;
 }
 .nav{
     z-index: 1;
@@ -37,26 +37,39 @@ hr{
     height: 100%;
     align-items: center;
     backdrop-filter: blur(20px);
+    position: relative;
 }
 .sbnv{
     display: flex;
     flex-direction: row;
-    gap: 9%;
+    gap: .5rem;
     height: 100%;
-    padding: 5% 3%;
+    padding: 5% 0;
+    width: auto;
     box-sizing: border-box;
     cursor: pointer;
     align-items: center;
+    border-bottom: 3px solid transparent;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .2s;
 }
 .nmbr, .route{
     color: white;
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.1rem;
 }
 .route{
     text-transform: uppercase;
 }
 .nmbr{
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+.sbnv:hover{
+    font-weight: 800;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.556);
 }
 .hm{
     border-bottom: 3px solid white;
@@ -64,124 +77,92 @@ hr{
 }
 .hm:hover{
     border-bottom: 3px solid white;
-    color: white;
+    font-weight: 800;
 }
-.sbnv:hover{
-    border-bottom: 3px solid rgba(255, 255, 255, 0.556);
-}
-.link{
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-.close{
+.close, .cls{
     display: none;
 }
 @media only screen and (max-width: 1197px){
-   .HomeNav{
-        height: 21%;
-   } 
+    .nav{
+        width: 60%;
+    }
 }
 @media only screen and (max-width: 1073px){
     .HomeNav{
-         height: 19%;
+         height: 20%;
     } 
+    .nav{
+        padding: 0 5%;
+    }
  }
  @media only screen and (max-width: 943px){
+    .HomeNav{
+        gap: 1rem;
+    }
     .nav{
-        padding-left: 6%;
-        padding-right: 8%;
+        width: 70%;
     }
     .logo{
-        width: 5%;
-        height: 55%;
+        width: 4%;
+        height: auto;
+    }
+    hr{
+        height: 1px;
+    }
+    .nmbr, .route{
+        font-size: 1rem;
     }
  }
  @media only screen and (max-width: 768px){
     .HomeNav{
         justify-content: space-between;
+        padding: 0 0 0 4%;
+        height: 4.5rem;
     }
-    .navhr{
+    .navhr, .nmbr{
         display: none;
     }
-    .nav{
-        width: 70%;
-    }
     .logo{
-        width: 6%;
-    }
-    .nmbr{
-        display: none;
-    }
- }
- @media only screen and (max-width: 668px){
-    .HomeNav{
-        height: 17%;
-   } 
-    .nav{
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .logo{
-        width: 6%;
+        width: 5%;
     }
  }
  @media only screen and (max-width: 568px){
-    .HomeNav{
-        height: 16%;
-        padding: 4% 0 4% 4%;
-   } 
-   .route{
-        font-size: .85rem;
-   }
+    .route{
+        font-size: .9rem;
+    }
+    .nav{
+        width: 85%;
+    }
     .logo{
-        height: 50%;
+        width: 2rem;
     }
  }
  @media only screen and (max-width: 468px){
     .HomeNav{
-        height: 15%;
-        padding: 4% 0 4% 4%;
-   } 
-   .route{
-        font-size: .75rem;
-   }
-    .logo{
-        width: 7%;
-    }
-    .nav{
-        width: 78%;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .hm{
-        border-bottom: 2px solid white;
-    }
-    .sbnv:hover{
-        border-bottom: 2px solid rgba(255, 255, 255, 0.556);
+        height: 4rem;
     }
  }
  @media only screen and (max-width: 376px){
     .HomeNav{
-        height: 15%;
-        padding: 4% 7%;
+        padding: 1rem;
+        overflow: visible;
    } 
-   .ham{
+   .ham, .close{
         display: block;
-        width: 7%;
+        width: 1rem;
+        height: auto;
    }
    .route{
-        font-size: 1rem;
+        font-size: .8rem;
    }
     .logo{
-        width: 12%;
-        height: 53%;
+        width: 1.5rem;
     }
     .nav{
-        height: 665%;
-        z-index: 1;
+        height: 100vh;
         width: 70%;
         display: none;
+        background: #0b0e17;
         flex-direction: column;
         position: absolute;
         box-sizing: border-box;
@@ -190,7 +171,7 @@ hr{
         padding-right: 0;
         padding-top: 10%;
         top: 0;
-        right: -278px;
+        right: 0;
         align-items: flex-start;
         transition: right .3s;
     }
@@ -198,9 +179,6 @@ hr{
         border-bottom: none;
         border-right: 3px solid white;
         width: 100%;
-    }
-    .close{
-        display: block;
     }
     .sbnv{
         gap: 9%;
@@ -221,7 +199,7 @@ hr{
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        padding: 0 12% 17% 0;
+        padding: 0 12% 10% 0;
         box-sizing: border-box;
     }
  }

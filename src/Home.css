@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
 
 }
@@ -23,27 +23,34 @@
 }
 .rhome{
     width: 50%;
-    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
     cursor: pointer;
 }
 .sbspan{
-    color: black;
-    width: 100%;
-    height: 100%;
+    width: 42vh;
+    height: 42vh;
     background-color: white;
-    font-family: 'Bellefair', serif;
-    padding: 20% 12%;
-    font-size: 2rem;
-    text-transform: uppercase;
     border-radius: 50%;
     transition: box-shadow .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.in{
+    font-size: 3rem;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    color: black;
+    
 }
 .sbspan:hover {
     box-shadow: 0 0 0 4.5rem rgba(255, 255, 255, 0.145);
 }
 
 .lhome{
-    width: 40%;
+    width: 45%;
     font-family: 'Barlow', sans-serif;
     color: #D0D6F9;
     display: flex;
@@ -53,295 +60,174 @@
 .lhm2{
     font-family: 'Bellefair', serif;
     color: white;
-    font-size: 7rem;
+    font-size: 8rem;
     text-transform: uppercase;
     margin: 5% 0;
 }
 .lhm1{
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 5px;
 }
 .lhm3{
-    font-size: .9rem;
-    width: 70%;
+    font-size: 1rem;
+    width: 80%;
+    letter-spacing: .7px;
 }
-@media only screen and (max-width: 1197px){
-    .sbspan{
-        padding: 21% 12%;
-        font-size: 1.9rem;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhm2{
-        font-size: 6.5rem;
-    }
-    .lhm3{
-        width: 80%;
-    }
-}
+
 @media only screen and (max-width: 1073px){
+    .hbdy{
+        padding: 10% 7% 0 7%;
+    }
     .sbspan{
-        padding: 23% 12%;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhome{
-        width: 45%;
+        height: 38vh;
+        width: 38vh;
     }
 }
 @media only screen and (max-width: 943px){
-    .lhome{
-        width: 55%;
+    .in{
+        font-size: 2.5rem;
     }
     .sbspan{
-        font-size: 1.7rem;
+        height: 30vh;
+        width: 30vh;
     }
-    .rhome{
-        width: 45%;
+    .lhm1{
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+    .lhm3{
+        font-size: .9rem;
+        width: 80%;
+        letter-spacing: .6px;
+    }
+    .lhm2{
+        font-size: 6.5rem;
+        margin: 4% 0;
+    }
+}
+@media only screen and (max-width: 843px){
+    .sbspan{
+        height: 28vh;
     }
 }
 @media only screen and (max-width: 768px){
     .Home{
         background-image: url("./images/background-home-tablet.jpg");
-        height: 140%;
+        height: fit-content;
     }
     .hbdy{
         flex-direction: column;
-        height: 100%;
-        padding: 25% 10% 0 10%;
+        height: fit-content;
+        padding: 20% 7% 0 7%;
         justify-content: flex-start;
-        gap: 27%;
     }
     .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
-    }
-    .lhome{
-        width: 80%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.5rem;
-    }
-    .lhm2{
-        font-size: 8.5rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 80%;
-        text-align: center;
-        font-size: 1rem;
+        height: 40vh;
+        width: 40vh;
+        padding: 3%;
+        margin: 6rem 0 8rem 0;
     }
     .rhome{
-        text-align: center;
-    }
-}
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
+        width: 100%;
         align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
+        justify-content: center;
     }
     .lhm2{
-        font-size: 8rem;
+        text-align: center;
     }
     .lhm3{
-        font-size: 1rem;
+        width: 80%;
+        text-align: center;
     }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
+    .lhome{
+        align-items: center;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 568px){
-    .Home{
-        height: 120%;
-    } 
     .hbdy{
-        padding: 28% 10% 0 10%;
-        gap: 25%;
+        padding: 25% 7% 0 7%;
     }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.7rem;
+    .in{
+        font-size: 2rem;
     }
     .lhm1{
         font-size: 1.2rem;
     }
-    .lhm2{
-        font-size: 7rem;
-    }
     .lhm3{
-        width: 95%;
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
+        font-size: .8rem;
     }
     .lhm2{
-        font-size: 8rem;
-    }
-    .lhm3{
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 468px){
-    .Home{
-        height: 110%;
-    } 
-    .hbdy{
-        padding: 35% 10% 0 10%;
-        gap: 25%;
-        width: 100%;
+        font-size: 5rem;
     }
     .sbspan{
-        padding: 38% 18%;
-        font-size: 1.5rem;
-    }
-    .lhome{
-        width: 90%;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-    }
-    .lhm2{
-        font-size: 6rem;
-    }
-    .lhm3{
-        width: 95%;
-        font-size: .9rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 376px){
-    .Home{
-        background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    .hbdy{
-        height: 100%;
-        padding: 40% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
-    }
-    .lhome{
-        width: 80%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-        letter-spacing: 2px;
-    }
-    .lhm2{
-        font-size: 5.5rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 100%;
-        font-size: .9rem;
-        line-height: 20px;
-    }
-    .sbspan{
-        padding: 42% 19%;
-        font-size: 1.4rem;
-    }
-    .lhome{
-        width: 95%;
+        height: 30vh;
+        width: 30vh;
+        padding: 3%;
+        margin: 5rem 0 6rem 0;
     }
     .sbspan:hover {
         box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
     }
 }
-@media only screen and (max-width: 276px){
+
+
+@media only screen and (max-width: 376px){
     .Home{
         background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
+        width: 100%;
+        height: 100vh;
     }
     .hbdy{
         height: 100%;
-        padding: 50% 5% 0 5%;
-        gap: 20%;
+        padding: 6rem 5% 0 5%;
     }
     .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
+        height: 22vh;
+        width: 22vh;
+        padding: 3%;
+        margin: 5rem 0 6rem 0;
     }
-    .lhome{
-        width: 80%;
-        align-items: center;
+    .in{
+        font-size: 1.5rem;
     }
     .lhm1{
-        font-size: 1rem;
-        letter-spacing: 2px;
+        font-size: 1.1rem;
+        text-align: center;
+        letter-spacing: 1.7px;
+    }
+    .lhm3{
+        font-size: .7rem;
+        letter-spacing: .4px;
     }
     .lhm2{
         font-size: 4rem;
         text-align: center;
     }
-    .lhm3{
-        width: 100%;
-        font-size: .8rem;
-        line-height: 20px;
-    }
+}
+@media only screen and (max-width: 276px){
     .sbspan{
-        padding: 42% 19%;
+        height: 18vh;
+        width: 18vh;
+        padding: 3%;
+        margin: 4rem 0 5rem 0;
+    }
+    .in{
         font-size: 1.2rem;
     }
-    .lhome{
-        width: 95%;
+    .lhm1{
+        font-size: 1rem;
+    }
+    .lhm3{
+        font-size: .6rem;
+    }
+    .lhm2{
+        font-size: 3rem;
     }
     .sbspan:hover {
-        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
+        box-shadow: 0 0 0 2.5rem rgba(255, 255, 255, 0.145);
     }
 }

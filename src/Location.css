@@ -22,8 +22,9 @@
 .plttxt{
     font-family: 'Barlow', sans-serif;
     color: #D0D6F9;
-    font-size: .9rem;
+    font-size: 1rem;
     padding-bottom: 6%;
+    letter-spacing: .6px;
 }
 .pltdets{
     padding-top: 2%;
@@ -39,7 +40,7 @@
     color: #D0D6F9;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: .9rem;
     padding-bottom: 6%;
     word-spacing: 5px;
     letter-spacing: 2px;
@@ -48,40 +49,53 @@
     color: white;
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .dvd{
     width: 100%;
 }
 @media only screen and (max-width: 1197px){
     .planet{
-        width: 40%;
+        width: 32vw;
+        height: 32vw;
     }
 }
 @media only screen and (max-width: 1073px){
-    .planet{
+    .abtplt{
         width: 45%;
     }
     .Location{
-        padding: 8% 0 0 5%;
+        padding-left: 0;
+        align-items: center;
+    }
+    .planet{
+        width: 35vw;
+        height: 35vw;
     }
 }
-
-@media only screen and (max-width: 843px){
-    .planet{
-        width: 45%;
+@media only screen and (max-width: 943px){
+    .pltnm{
+        font-size: 4.5rem;
     }
-    .Location{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 8% 0 0 5%;
+    .plttxt{
+        font-size: .9rem;
+    }
+    .dtnce, .tme{
+        font-size: .8rem;
+    }
+    .dtncenm, .tmenm{
+        font-size: 1.6rem;
     }
 }
 @media only screen and (max-width: 768px){
     .Location{
         flex-direction: column;
         align-items: center;
-        padding: 7% 0 0 5%;
+        gap: 3rem;
+        height: fit-content;
+    }
+    .pltdets{
+        width: 100%;
     }
     .abtplt{
         width: 90%;
@@ -90,219 +104,60 @@
         align-items: center;
     }
     .planet{
-        width: 38%;
-        margin-bottom: 7%;
+        width: 50vh;
+        height: 50vh;
     }
     .plttxt{
         text-align: center;
     }
-    .pltdets{
-        width: 70%;
-    }
 }
-/*
-
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhm2{
-        font-size: 8rem;
-    }
-    .lhm3{
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
 @media only screen and (max-width: 568px){
-    .Home{
-        height: 120%;
-    } 
-    .hbdy{
-        padding: 28% 10% 0 10%;
-        gap: 25%;
+    .pltnm{
+        font-size: 4rem;
     }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.7rem;
+    .plttxt{
+        font-size: .8rem;
     }
-    .lhm1{
-        font-size: 1.2rem;
+    .dtnce, .tme{
+        font-size: .7rem;
     }
-    .lhm2{
-        font-size: 7rem;
-    }
-    .lhm3{
-        width: 95%;
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 668px){
-    .Home{
-        height: 130%;
-    } 
-    .hbdy{
-        padding: 32% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 1.8rem;
-    }
-    .lhome{
-        width: 85%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.3rem;
-    }
-    .lhm2{
-        font-size: 8rem;
-    }
-    .lhm3{
-        font-size: 1rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 468px){
-    .Home{
-        height: 110%;
-    } 
-    .hbdy{
-        padding: 35% 10% 0 10%;
-        gap: 25%;
-        width: 100%;
-    }
-    .sbspan{
-        padding: 38% 18%;
-        font-size: 1.5rem;
-    }
-    .lhome{
-        width: 90%;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-    }
-    .lhm2{
-        font-size: 6rem;
-    }
-    .lhm3{
-        width: 95%;
-        font-size: .9rem;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.145);
-    }
-}
-
-@media only screen and (max-width: 376px){
-    .Home{
-        background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
-    }
-    .hbdy{
-        height: 100%;
-        padding: 40% 5% 0 5%;
-        gap: 25%;
-    }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
-    }
-    .lhome{
-        width: 80%;
-        align-items: center;
-    }
-    .lhm1{
-        font-size: 1.1rem;
-        letter-spacing: 2px;
-    }
-    .lhm2{
-        font-size: 5.5rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 100%;
-        font-size: .9rem;
-        line-height: 20px;
-    }
-    .sbspan{
-        padding: 42% 19%;
+    .dtncenm, .tmenm{
         font-size: 1.4rem;
     }
-    .lhome{
-        width: 95%;
+    .abtplt{
+        width: 100%;
     }
-    .sbspan:hover {
-        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
+    .planet{
+        width: 40vh;
+        height: 40vh;
     }
 }
-@media only screen and (max-width: 276px){
-    .Home{
-        background-image: url("./images/background-home-mobile.jpg");
-        height: 100%;
-        overflow-y: hidden;
+@media only screen and (max-width: 376px){
+    .pltnm{
+        font-size: 3rem;
     }
-    .hbdy{
-        height: 100%;
-        padding: 50% 5% 0 5%;
-        gap: 20%;
+    .plttxt{
+        font-size: .7rem;
     }
-    .sbspan{
-        padding: 35% 17%;
-        font-size: 2rem;
+    .dtncenm, .tmenm{
+        font-size: 1.7rem;
+        
     }
-    .lhome{
-        width: 80%;
+    .planet{
+        width: 30vh;
+        height: 30vh;
+    }
+    .Location{
+        padding: 2rem 0 0 5%;
+        gap: 2rem;
+        height: fit-content;
+    }
+    .pltdets{
+        flex-direction: column;
+        gap: 1rem;
         align-items: center;
     }
-    .lhm1{
-        font-size: 1rem;
-        letter-spacing: 2px;
+    .distance, .time{
+        align-items: center;
     }
-    .lhm2{
-        font-size: 4rem;
-        text-align: center;
-    }
-    .lhm3{
-        width: 100%;
-        font-size: .8rem;
-        line-height: 20px;
-    }
-    .sbspan{
-        padding: 42% 19%;
-        font-size: 1.2rem;
-    }
-    .lhome{
-        width: 95%;
-    }
-    .sbspan:hover {
-        box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.145);
-    }
-} */
+}

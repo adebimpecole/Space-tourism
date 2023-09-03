@@ -20,10 +20,12 @@ const CrewDets = () => {
     <div className='CrewDets'>
         <img alt='crewmember' className='crewmem' src={plpic[setNxt]}/>
         <div  className='abtmmbr'>
-            <span className='title'>{dt.crew[setNxt].role}</span>
-            <span className='cname'>{dt.crew[setNxt].name}</span>
-            <div className='mmbrtxt'>
-                {dt.crew[setNxt].bio}
+            <div className='sep'>
+              <span className='title'>{dt.crew[setNxt].role}</span>
+              <span className='cname'>{dt.crew[setNxt].name}</span>
+              <div className='mmbrtxt'>
+                  {dt.crew[setNxt].bio}
+              </div>
             </div>
             <SlideBtn Next={Move}/>
         </div>

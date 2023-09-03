@@ -15,7 +15,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='rhome'>
-                <span className='sbspan'>Explore</span>
+                <span className='sbspan'><span className='in'>Explore</span></span>
             </div>
         </div>
     </ div>
