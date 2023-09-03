@@ -3,7 +3,7 @@ This website is designed to enable users to easily access essential information 
 
 ## Table of contents
 
-- [Space Tourism -Information-Website](#space-tourism ---information-website)
+- [Space-Tourism-Information-Website](#space-tourism---information-website)
   - [Table of contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Installation](#installation)
