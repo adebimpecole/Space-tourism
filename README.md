@@ -3,7 +3,7 @@ This website is designed to enable users to easily access essential information 
 
 ## Table of contents
 
-- [Lilies - Food-Website](#lilies---food-website)
+- [Space Tourism -Information-Website](#space-tourism ---information-website)
   - [Table of contents](#table-of-contents)
   - [Getting Started](#getting-started)
   - [Installation](#installation)
@@ -17,7 +17,7 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/adebimpecole/Lilies-Food-App.git
+git clone https://github.com/adebimpecole/Space-tourism.git
 cd project-name
 ```
 
